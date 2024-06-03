@@ -25,12 +25,11 @@ code {
   filter: invert(44%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(97%) contrast(92%);
 }
 
-/* Custom scrollbar styles */
 .scrollbar-hide {
   &::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none; /
+  -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
 
