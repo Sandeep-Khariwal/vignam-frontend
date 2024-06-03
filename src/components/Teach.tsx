@@ -10,7 +10,7 @@ import { getDocument, GlobalWorkerOptions, PDFDocumentProxy } from 'pdfjs-dist';
 import 'pdfjs-dist/build/pdf.worker.min.mjs';
 import { pdfjs } from 'react-pdf';
 
-const URL = process.env.URL || "http://localhost:8080/content"
+const URL = process.env.URL || "https://vignam-backend-p6l3.onrender.com"
 
 type PdfItem = {
   file: File;
