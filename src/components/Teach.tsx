@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FaChevronLeft } from "react-icons/fa";
-import { useDisclosure } from '@mantine/hooks'
 import axios from "axios"
 import { Button, Modal } from 'antd';
-import { Textarea } from '@mantine/core';
 import { FileInput } from '@mantine/core';
 import toast, { Toaster } from 'react-hot-toast';
 import { getDocument, GlobalWorkerOptions, PDFDocumentProxy } from 'pdfjs-dist';
@@ -49,13 +47,13 @@ const Teach = () => {
   const showModal = () => {
     setIsModalOpen(true);
   };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
+  // const handleCancel = () => {
+  //   setIsModalOpen(false);
+  // };
 
-  const showInputModal = () => {
-    setIsInputModalOpen(true);
-  };
+  // const showInputModal = () => {
+  //   setIsInputModalOpen(true);
+  // };
   const handleInputCancel = () => {
     setIsInputModalOpen(false);
   };
@@ -209,7 +207,7 @@ const Teach = () => {
       </div>}
 
       <div className='w-[95%]  '>
-        <div className='py-5 flex overflow-x-scroll ' >
+        <div className='py-5 flex overflow-x-scroll scrollbar-hide ' >
         {pdfContent.map((item, index) => (
         <div key={index} className=" flex flex-col items-center flex-wrap ">
          <div className='w-[8rem] bg-gray-200 mr-2 rounded-lg' >

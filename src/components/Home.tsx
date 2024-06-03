@@ -20,7 +20,7 @@ const Home = () => {
 
     <div className={` duration-300 ease-in-out ${collapse?"lg:w-[15rem] ":"lg:w-[5rem]"} w-full shadow-right h-auto lg:h-screen  `}>
       
-      <div className="w-full h-[10%] flex justify-start items-center pl-5 mt-2 ">
+      <div className="w-full h-[10%] flex justify-start items-center pl-5 mt-8 ">
       <img src="/assets/school.svg" alt="not found" width={40} height={40} className=" mr-3 rounded-full  " />
       {collapse && <h2 >School Name</h2>}
       </div>
